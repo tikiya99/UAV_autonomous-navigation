@@ -1,0 +1,34 @@
+# NavSat Transform Configuration
+# Converts GPS coordinates to local Cartesian frame
+
+navsat_transform_node:
+  ros__parameters:
+    # Frequency of navsat transform
+    frequency: 30.0
+    
+    # Delay for data collection on startup
+    delay: 3.0
+    
+    # Use local Cartesian coordinates (not UTM)
+    use_local_cartesian: true
+    
+    # Wait for GPS datum
+    wait_for_datum: false
+    
+    # Publish filtered GPS data
+    publish_filtered_gps: true
+    
+    # Broadcast the UTM transform
+    broadcast_cartesian_transform: false
+    
+    # Transform timeout
+    transform_timeout: 0.0
+    
+    # Yaw offset for magnetic declination
+    magnetic_declination_radians: 0.0
+    
+    # Yaw offset (if GPS heading differs from robot heading)
+    yaw_offset: 0.0
+    
+    # Zero altitude (flatten GPS altitude)
+    zero_altitude: false

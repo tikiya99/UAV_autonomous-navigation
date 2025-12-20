@@ -1,0 +1,44 @@
+# Sample Mission File
+# Define GPS waypoints for autonomous navigation
+
+mission:
+  name: "Sample Mission"
+  description: "Basic takeoff, navigate, and land mission"
+
+waypoints:
+  - name: "Takeoff"
+    latitude: 7.2906
+    longitude: 80.6337
+    altitude: 5.0
+    action: takeoff
+
+  - name: "Waypoint 1"
+    latitude: 7.2908
+    longitude: 80.6340
+    altitude: 10.0
+    action: navigate
+
+  - name: "Waypoint 2"
+    latitude: 7.2910
+    longitude: 80.6345
+    altitude: 10.0
+    action: navigate
+
+  - name: "Waypoint 3"
+    latitude: 7.2907
+    longitude: 80.6342
+    altitude: 8.0
+    action: navigate
+
+  - name: "Return Home"
+    latitude: 7.2906
+    longitude: 80.6337
+    altitude: 5.0
+    action: land
+
+# Safety parameters
+safety:
+  max_altitude: 50.0  # meters
+  geofence_radius: 100.0  # meters from home
+  low_battery_return: 20  # percent
+  connection_timeout: 5.0  # seconds

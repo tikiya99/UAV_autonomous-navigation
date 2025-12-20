@@ -1,0 +1,18 @@
+# Teleop parameters
+teleop_keyboard_node:
+  ros__parameters:
+    # Base speeds
+    linear_speed: 0.5       # m/s - horizontal movement
+    vertical_speed: 0.3     # m/s - altitude changes
+    yaw_rate: 0.3          # rad/s - rotation speed
+    
+    # Publishing rate
+    publish_rate: 20.0      # Hz
+    
+    # Velocity limits (safety)
+    max_linear_velocity: 2.0   # m/s
+    max_vertical_velocity: 1.0 # m/s
+    max_yaw_rate: 1.0         # rad/s
+    
+    # Velocity decay factor (0-1, how quickly to stop when no input)
+    velocity_decay: 0.8
