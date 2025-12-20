@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ROS2 build directories
+build/
+install/
+log/
+
+# Colcon
+.colcon/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled object files
+*.o
+*.obj
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Bags
+*.bag
+*.db3
+
+# Large data files
+*.pcd
+*.ply
+*.bin
+
+# ORB-SLAM3 vocabulary (handled separately)
+# ORBvoc.txt
+
+# Calibration images (keep config only)
+calibration_images/
+
+# Temporary files
+*.tmp
+*.temp
