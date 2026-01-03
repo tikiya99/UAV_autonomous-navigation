@@ -6,7 +6,7 @@ A comprehensive ROS2-based autonomous quadcopter navigation system for DJI F450 
 ![PX4](https://img.shields.io/badge/PX4-v1.14+-orange)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-purple)
 
-## 🚁 Overview
+## Overview
 
 This project implements a complete autonomous UAV navigation stack featuring:
 
@@ -16,7 +16,7 @@ This project implements a complete autonomous UAV navigation stack featuring:
 - **Autonomous Navigation** using Nav2 stack
 - **Keyboard Teleoperation** for manual control
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Hardware Requirements](#hardware-requirements)
 - [Software Dependencies](#software-dependencies)
@@ -27,7 +27,7 @@ This project implements a complete autonomous UAV navigation stack featuring:
 - [Architecture](#architecture)
 - [Contributing](#contributing)
 
-## 🔧 Hardware Requirements
+## Hardware Requirements
 
 | Component | Specification |
 |-----------|---------------|
@@ -41,7 +41,7 @@ This project implements a complete autonomous UAV navigation stack featuring:
 | GPS | Compatible GPS module |
 | Battery | 3S/4S LiPo |
 
-## 💻 Software Dependencies
+## Software Dependencies
 
 ### Operating System
 - Ubuntu 22.04 LTS
@@ -62,7 +62,7 @@ This project implements a complete autonomous UAV navigation stack featuring:
 - Eigen3
 - Pangolin (for ORB-SLAM3)
 
-## 📦 Installation
+## Installation
 
 ### 1. Install ROS2 Humble
 
@@ -138,7 +138,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Teleop Mode (Manual Control)
 
@@ -164,7 +164,7 @@ source install/setup.bash
 ros2 launch uav_bringup uav_autonomous.launch.py
 ```
 
-## 📁 Package Description
+## Package Description
 
 | Package | Description |
 |---------|-------------|
@@ -178,7 +178,7 @@ ros2 launch uav_bringup uav_autonomous.launch.py
 | `uav_mission` | Mission planning and execution |
 | `uav_bringup` | Launch files and configurations |
 
-## 🎮 Usage
+## Usage
 
 ### Keyboard Controls
 
@@ -205,7 +205,7 @@ G: Land
 | `/slam/pose` | `PoseStamped` | SLAM pose estimate |
 | `/gps/fix` | `NavSatFix` | GPS data |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -241,11 +241,11 @@ G: Land
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 📖 Documentation
+## Documentation
 
 For detailed documentation, see [GUIDE.md](GUIDE.md).
 
-## ⚠️ Safety
+## Safety
 
 > [!CAUTION]
 > **Always test in simulation first before real flight!**
@@ -254,10 +254,10 @@ For detailed documentation, see [GUIDE.md](GUIDE.md).
 > - Follow local drone regulations
 > - Never fly over people or restricted areas
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please read the contributing guidelines before submitting a pull request.
