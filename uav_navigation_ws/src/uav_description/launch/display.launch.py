@@ -39,7 +39,7 @@ def generate_launch_description():
     
     # Process xacro file
     robot_description = ParameterValue(
-        Command(['xacro ', urdf_file]),
+        Command(['xacro ', '"', urdf_file, '"']),
         value_type=str
     )
     

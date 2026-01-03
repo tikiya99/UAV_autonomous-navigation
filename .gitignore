@@ -53,3 +53,7 @@ calibration_images/
 # Temporary files
 *.tmp
 *.temp
+
+# External repositories
+micro_xrce_dds_agent/
+uav_navigation_ws/src/px4_msgs/

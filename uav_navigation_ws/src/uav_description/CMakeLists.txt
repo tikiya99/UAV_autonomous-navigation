@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 find_package(robot_state_publisher REQUIRED)
-find_package(joint_state_publisher REQUIRED)
+# Note: joint_state_publisher is a runtime dependency, not a CMake dependency
 
 # Install directories
 install(DIRECTORY

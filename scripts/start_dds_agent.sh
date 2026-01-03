@@ -2,7 +2,7 @@
 # Start Micro XRCE-DDS Agent
 
 MODE=${1:-"serial"}
-DEVICE=${2:-"/dev/ttyUSB0"}
+DEVICE=${2:-"/dev/ttyACM0"}
 BAUDRATE=${3:-"921600"}
 PORT=${3:-"8888"}
 
